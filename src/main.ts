@@ -15,3 +15,10 @@ app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
+
+
+// const resolved = this.$router.resolve({
+//      name: 'TestingView',
+//      params: { id: item.id }
+//    })
+// resolved.href // '/some-route-name/:id'

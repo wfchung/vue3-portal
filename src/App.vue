@@ -12,7 +12,7 @@ import Home from './views/Home.vue'
 <template>
 
 <header>
-     <h1>Ver. 1.00</h1>
+     <h1>Ver. 1.01</h1>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="100" height="100" /> -->
     <div>
       <nav>
