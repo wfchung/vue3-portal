@@ -1,18 +1,24 @@
 <script>
 import { onMounted, ref } from 'vue'
-import { useRoute } from 'vue-router'
+// import { useRoute } from 'vue-router'
+
+
 
 export default {
+    props: {
+     ticketId: String
+    },
+
     data() {
         return {
-               ticketId: "ed0f482b0a650932"
+               myticketId: "ed0f482b0a650932"
         };
     },
 
      mounted() {
-          const route = useRoute();
-          this.ticketId = route.params.ticketId;
-          console.log(route.params.ticketId);
+          // const route = useRoute();
+          // this.ticketId = route.params.ticketId;
+          // console.log(route.params.ticketId);
           console.log("BASE URL:" + import.meta.env.BASE_URL);
      }
 }

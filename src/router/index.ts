@@ -15,7 +15,7 @@ const router = createRouter({
     {
      path: '/TestingView/:ticketId',
      name: 'TestingView',
-     component: TestingView
+     component: TestingView, props: true
     },
     {
      path: "/:pathMatch(.*)*",
