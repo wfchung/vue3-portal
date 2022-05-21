@@ -1,0 +1,1 @@
+import{_ as e,u as s,t as o}from"./index.b2c438a0.js";const a={data(){return{ticketId:"ed0f482b0a650932"}},mounted(){const t=s();this.ticketId=t.params.ticketId,console.log(t.params.ticketId),console.log("BASE URL:/")}};function r(t,c,i,n,d,p){return" Ticket ID: "+o(this.ticketId)}var _=e(a,[["render",r]]);export{_ as default};
