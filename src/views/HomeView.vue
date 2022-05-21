@@ -13,7 +13,14 @@ export default {
      mounted() {
           console.log("BASE URL:" + import.meta.env.BASE_URL);
           this.BASE_URL = import.meta.env.BASE_URL;
-     }
+     },
+
+     methods: {
+          TestView() {
+               this.$router.push({ name: 'TestingView', params: { ticketId: '123' } })
+
+          }
+     }     
 }
 
 </script>
@@ -21,9 +28,7 @@ export default {
 
 <template>
   <main>
-       <h1>
-     Base URL is:
-     {{this.BASE_URL}}
-     </h1>
+     <h1>Base URL is:{{this.BASE_URL}}</h1>
+     <button @click="TestView()">Goto TestView</button>
   </main>
 </template>
